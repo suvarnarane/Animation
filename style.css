@@ -1,0 +1,39 @@
+body
+{
+    background-color: blueviolet;
+}
+.road
+{
+border-bottom: 7px  dashed black;
+
+}
+.man
+{
+    background:url(walkingman.png);
+    width :240px;
+    height: 500px;
+    animation:walk 1s steps(10) infinite,
+    forword 5s linear infinite;
+}
+@keyframes walk
+{
+0%
+{   
+    background-position: 0px;
+}
+100%
+{
+    background-position: 2037px;
+}
+}
+@keyframes forword
+{
+0%
+{
+    transform: translateX(-100px);
+}
+100%
+{
+ transform:  translateX(1200px);
+}
+}    
